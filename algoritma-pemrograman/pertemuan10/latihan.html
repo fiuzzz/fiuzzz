@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const barang={
+            nama:"apel",
+            stok:20,
+            harga:7000,
+            
+
+            jual:function(jumlah,barang,nominal){
+                this.saldo-=nominal
+                barang.stok-=jumlah
+                
+                console.log(` ${jumlah} buah ${barang.nama} dibeli oleh Faiz yang harganya ${nominal}`);
+                
+
+            },
+
+            sisastock:function(){
+                console.log("sisa stock buah apel",this.stok);
+                
+            }
+         }
+        const orang={
+            nama:"Faiz",
+            saldo:1000000,
+
+            beli:function(jumlah,barang,nominal){
+                this.saldo-=nominal
+                barang.stok-=jumlah
+                
+                console.log(`Faiz membeli ${jumlah} buah ${barang.nama} yang harganya ${nominal}`);
+                
+
+            },
+
+            sisasaldo:function(){
+                console.log("sisa saldo faiz:",this.saldo);
+                
+            }
+
+        }
+
+        //awal
+        console.log("Saldo faiz awal:",orang.saldo);
+        console.log("stock apel awal:",barang.stok);
+        
+        
+
+        //setelah
+        orang.beli(5,barang,35000)
+        orang.sisasaldo()
+        barang.sisastock()
+
+
+        
+    </script>
+</body>
+</html>

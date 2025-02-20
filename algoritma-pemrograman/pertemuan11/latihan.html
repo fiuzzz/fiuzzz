@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numbers=[-2,10,-3,5,7,8,-6,4,12,-1]
+
+        //filter nilai yang lebih besar dari 0 dan bi.genap
+        //klikan hasil filter dengan 3
+
+        const newnumbers=numbers.filter((numbers)=>{
+            return numbers >=0  && numbers %2 === 0
+        })
+        console.log(newnumbers);
+        
+        const kali=newnumbers.map((numbers)=>{
+            return numbers *2
+        })
+        console.log(kali);
+
+        const total=kali.reduce((accumulator,currentvalue)=>{
+            return accumulator+currentvalue;
+        })
+        console.log(total);
+
+        // const hasil=numbers
+        // .filter((number)=>number>=3&&number%2===0)
+        // .map((numbers)=>numbers * 3)
+        // .reduce((accumualator,currentvalue)=>accumualator+currentvalue)
+
+        // console.log(hasil);
+        
+        
+        
+    </script>
+</body>
+</html>

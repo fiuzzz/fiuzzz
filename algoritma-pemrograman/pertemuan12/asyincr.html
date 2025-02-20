@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function download (){
+            return new Promise((resolve,reject)=>{
+                setTimeout(function(){
+                resolve();
+                
+            },3000)
+            })
+           
+                
+            }
+            
+
+        function verivy(){
+            return new Promise(function(resolve,reject){
+                setTimeout(function(){
+                resolve()
+            },2000)
+            })
+           
+        }
+
+        function notify(){
+            console.log("Download complite");
+            
+            }
+        
+
+        async function main(){
+            // download(()=>{
+            //     verivy(()=>{
+            //         notify()
+            //     })
+            // })
+            // consuming promsie
+            download()
+            .then((hasil1)=>{
+                console.log(hasil1);
+                return verivy()
+                
+            })
+            .then((hasil2)=>{
+                console.log(hasil2);
+                return notify()
+            })
+            .catch((error)=>{
+                console.log(error);
+                
+            })
+
+            //consuming async await
+            // console.log(await download());
+            // console.log(await verivy());
+            // notify();
+            
+            
+            
+        }
+
+        //Syichronous
+        //Brurutan
+        main();
+
+        //Asyinchronoun
+        //berjalan berdasarkan waktu
+        
+    </script>
+</body>
+</html>

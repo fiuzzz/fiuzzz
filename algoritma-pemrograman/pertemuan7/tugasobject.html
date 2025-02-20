@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mahasantri1={
+            
+                name:"Muhammad Faiz Ramdhan",
+                nim:3207130101050001,
+                jurusan:"Peminatan pemograman web",
+                matkul:["Algoritma pemograman",
+                        "Dasar-dasar komputer",
+                        "Dasar-dasar web"],
+                nilai:99,
+                tampilkanStatus: function (){
+                    return `
+                    Nama:${this.name} 
+                    Nim:(${this.nim}) 
+                    Jurusan: ${this.jurusan} 
+                    Matakuliah: ${this.matkul}
+                    Nilai:${this.nilai} 
+                    Status:${this.nilai >= 70 ? 'lulus' : 'tidak lulus'}`;}
+            }
+
+        let mahasantri2={
+            
+            name:"Muhammad dziker",
+            nim:32071302012050001,
+            jurusan:"Peminatan pemograman web",
+            matkul:["Algoritma pemograman",
+                    "Dasar-dasar komputer",
+                    "Dasar-dasar web"],
+            nilai:99,
+            tampilkanStatus: function (){
+                    return `
+                    Nama:${this.name} 
+                    Nim:(${this.nim}) 
+                    Jurusan: ${this.jurusan} 
+                    Matakuliah: ${this.matkul}
+                    Nilai:${this.nilai} 
+                    Status:${this.nilai >= 70 ? 'lulus' : 'tidak lulus'}`;}
+        }
+
+        let mahasantri3={
+            
+            name:"Muhammad Agus",
+            nim:3207130303050001,
+            jurusan:"Peminatan pemograman web",
+            matkul:["Algoritma pemograman",
+                    "Dasar-dasar komputer",
+                    "Dasar-dasar web"],
+            nilai:69,
+            tampilkanStatus: function (){
+                    return `
+                    Nama:${this.name} 
+                    Nim:(${this.nim}) 
+                    Jurusan: ${this.jurusan} 
+                    Matakuliah: ${this.matkul}
+                    Nilai:${this.nilai} 
+                    Status:${this.nilai >= 70 ? 'lulus' : 'tidak lulus'}`;}
+        }
+
+            
+            console.log(mahasantri1.tampilkanStatus());
+            console.log(mahasantri2.tampilkanStatus());
+            console.log(mahasantri3.tampilkanStatus());
+            
+
+        
+        
+    </script>
+</body>
+</html>

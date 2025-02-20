@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function film() {
+    return new Promise(function(resulve,reject){
+        setTimeout(function(){
+            resulve(`[{judul: "5 Menara",sutradara: "Agus",pemeran: "Ucup, Bambang",},]`);
+            },2000);
+         });
+           
+}
+
+function musik() {
+    return new Promise(function(resulve,reject){
+        setTimeout(() =>{
+            resulve(`[{penyanyi: "Agus",pembuat: "Budi",judul: "Do Re Mi",}]`);
+           },5000);
+        });
+    
+  
+}
+
+async function main() {
+
+ }
+ film()
+ .then((hasil)=> {
+    console.log(hasil);
+    return musik();
+    })
+.then((hasil2) => {
+        console.log(hasil2);
+    })
+
+
+    </script>
+</body>
+</html>

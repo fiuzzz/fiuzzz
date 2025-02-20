@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // s="";
+        // for(let a =0; a<5; a++){
+        //     for (let b =0; b<=a; b++){
+        //         s +="*"
+        //     }
+        //     s+="\n"
+        // }
+        // console.log(s);
+        
+        let output = '';
+        let rows = 5;
+        for (let i = 1; i <= rows; i++) {
+            for(let j = 1; j <= rows - i; j++){
+                output += '*';
+            }for (let k = 1; k <= i * 2 - 1; k++) {
+                output +='*';
+            }
+            
+            output += '\n';
+        }
+        console.log(output);
+                
+           
+        
+    </script>
+</body>
+</html>
