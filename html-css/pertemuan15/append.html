@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Membuat element h1 dan p
+        let judul=document.createElement('h1')
+        let isi=document.createElement("p")
+        // Mengisi content elemen
+        judul.textContent="Belajar DOM"
+        isi.textContent="Menambah element dengan DOM"
+        // Menambahkan element  ke tag body
+        document.body.append(judul, isi)
+        
+    </script>
+</body>
+</html>

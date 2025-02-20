@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #eeeeee;
+}
+
+header{
+    background-color: #ffffff;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    padding-top: 30px;
+}
+
+header .left .logo{
+    color: blue;
+}
+header .right .user{
+    font-weight: bold;
+}
+nav {
+    background-color: #3A98B9 !important;
+    text-align: right;
+    height: 50px;
+}
+
+nav ul {
+    vertical-align: middle;
+}
+
+nav li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+nav ul li:hover {
+    background-color: #0078AA;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  main article {
+    margin: 20px 10px;
+    padding: 20px;
+    flex-basis: 72%;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  main article p {
+    margin: 10px 0px;
+  }
+
+  main aside {
+    flex-basis: 23%;
+    flex-grow: 1;
+  }
+
+  main aside .tag,
+  main aside .news {
+    margin: 20px 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    flex-basis: 20%;
+  }
+
+  main aside .tag ul,
+  main aside .news ol {
+    margin: 5px 30px;
+  }
+  main aside h3 {
+    margin-top: 20px;
+  }
+  .comments {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;  
+    padding: 50px;
+  }
+
+  .comments form fieldset {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .form-control {
+    width: 350px;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+
+  .form-control:focus{
+    background-color: #eeeeee;
+    outline-color: #0078AA;
+  }
+
+  .form-desc {
+    width: 350px;
+  }
+
+  .form-desc:focus {
+    background-color: #eeeeee;
+    outline-color: #0078AA;
+  }
+
+  .btn{
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background-color: #3A98B9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .btn-primary:hover{
+    background-color: #0078AA;
+  }
+
+  .float-end{
+    float: right;
+  }

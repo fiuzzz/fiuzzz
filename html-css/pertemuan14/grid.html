@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:100% ;
+            background-color: gray;
+            display: grid;
+            text-align: center;
+            font-size: 20px;
+            margin: 5px auto;
+            /* grid-template-columns: 100px 100px 100px;*/
+            /* grid-template-columns: repeat(3,150px); */
+            /* grid-template-columns: auto auto; */
+            /* grid-template-columns: minmax(100px, 1fr); */
+            /* fr ukuranya relative
+                1 ukuran kolom dari gridnya */
+            grid-template-columns: 25% auto 30%; 
+           grid-template-rows: 80px 40px;
+           justify-content: center;
+           align-content: center;
+        }
+        div{
+            margin: 10px;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">1</div>
+        <div class="nav">2</div>
+        <div class="aside">3</div>
+        <div class="main">4</div>
+        <div class="section">5</div>
+        <div class="footer">6</div>
+    </div>
+</body>
+</html>
